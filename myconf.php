@@ -19,8 +19,8 @@ else {
     // Lien Eedomus - Withing :
     $users = array(
         // Pour chaque utilisateur Withing configuré
-        array ('id' => <EEDOMUS_DEVICE_ID>, 'publickey' => '<WITHING_CLE_UTILISATEUR>', 'deviceid' => <EEDOMUS_DEVICE_ID>, 'pseudo' => '<PSEUDO_WITHING>'),
-        array ('id' => <EEDOMUS_DEVICE_ID>, 'publickey' => '<WITHING_CLE_UTILISATEUR>', 'deviceid' => <EEDOMUS_DEVICE_ID>, 'pseudo' => '<PSEUDO_WITHING>')
+        array ('id' => '<EEDOMUS_DEVICE_ID>', 'publickey' => '<WITHING_CLE_UTILISATEUR>', 'deviceid' => '<EEDOMUS_DEVICE_ID>', 'pseudo' => '<PSEUDO_WITHING>'),
+        array ('id' => '<EEDOMUS_DEVICE_ID>', 'publickey' => '<WITHING_CLE_UTILISATEUR>', 'deviceid' => '<EEDOMUS_DEVICE_ID>', 'pseudo' => '<PSEUDO_WITHING>')
     );
 
 }
