@@ -65,8 +65,6 @@
 		}
 	}
     
-
-    
     foreach ($users as $user) {
         if ($user['id'] == $userid) {
             updateMeas($user);
