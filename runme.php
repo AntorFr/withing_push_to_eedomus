@@ -22,7 +22,7 @@ if (WBSAPI_AccountGetuserslist ( MYMAIL, MYPASS, $userslist)) {
 $listtoreload = false;
 echo "Ensuring all users are public : ";
 foreach ($userslist as $user) {
-	$name = $user['firstname']." ".$user['lastname'];
+	$name = $user['publickey']. " - ".$user['firstname']." ".$user['lastname'];
 	if ($user['ispublic']!='1') {
 		$listtoreload = true;
 		WBSAPI_UserUpdate ( $user['id'], $user['publickey'], 1 );
@@ -40,7 +40,7 @@ if ($listtoreload) {
 
 
 foreach ($userslist as $user) {
-	$name = $user['firstname']." ".$user['lastname'];
+	$name = $user['publickey']. " - ". $user['firstname']." ".$user['lastname'];
 	echo "[".$name."] Loading scale measures : ";
 	if (WBSAPI_MeasureGetmeas ( $user['id'], $user['publickey'] , $measuregrps , 0 , 0 , DEVICE_TYPE_SCALE )) {
 		echo "OK\n"; } else { echo "KO\n"; exit(-1);
